@@ -1,295 +1,115 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Coleman Integrated Solutions — Automation & Compliance</title>
-  <meta name="description" content="Tiered automation scripts and compliance guardrails for Cisco, Palo Alto, Fortinet, Meraki, and Aruba environments." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><defs><linearGradient id=%22g%22 x1=%220%22 x2=%221%22 y1=%220%22 y2=%221%22><stop stop-color=%22%230ea5e9%22/><stop offset=%221%22 stop-color=%22%236366f1%22/></linearGradient></defs><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22url(%23g)%22/><path d=%22M30 55 l15 15 30-40%22 stroke=%22white%22 stroke-width=%228%22 fill=%22none%22 stroke-linecap=%22round%22/></svg>">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Coleman Integrated Solutions — Automation • Compliance • Network</title>
+  <meta name="description" content="Automation • Compliance • Network—deliver secure, compliant networks with code.">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="scripts.js"></script>
 </head>
 <body>
-  <!-- Navigation -->
-  <header class="nav glass">
-    <div class="container nav-inner">
-      <a class="brand" href="#top" aria-label="Coleman Integrated Solutions">
-        <svg class="brand-mark" viewBox="0 0 100 100" aria-hidden="true">
-          <defs>
-            <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#0ea5e9" />
-              <stop offset="100%" stop-color="#6366f1" />
-            </linearGradient>
-          </defs>
-          <rect width="100" height="100" rx="22" fill="url(#grad)"/>
-          <path d="M30 55 l15 15 30-40" stroke="white" stroke-width="9" fill="none" stroke-linecap="round"/>
-        </svg>
-        <div>
-          <div class="brand-title">Coleman Integrated</div>
-          <div class="brand-sub">Automation • Compliance • Network</div>
-        </div>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.svg" alt="Coleman Integrated Solutions logo" class="logo">
+        <span>Coleman Integrated</span>
       </a>
-      <nav class="nav-links" id="nav-links">
-        <a href="#features">Features</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#how">How it Works</a>
-        <a href="#faq">FAQ</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <nav class="nav">
+        <a href="index.html#services">Services</a>
+        <a href="index.html#industries">Industries</a>
+        <a href="case-studies.html">Case Studies</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="btn">Contact</a>
       </nav>
-      <div class="nav-cta">
-        <a class="btn ghost" href="mailto:sales@colemanintegrated.com">Contact</a>
-        <a class="btn" href="#pricing">Get Started</a>
-        <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
-      </div>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="hero" id="top">
-    <div class="blob b1"></div>
-    <div class="blob b2"></div>
-    <div class="container hero-inner fade-up">
-      <div class="pill">Tech‑forward automation for network compliance</div>
-      <h1>Sell compliance as code. <span class="gradient-text">Fix drift before audits.</span></h1>
-      <p class="lead">Coleman Integrated Solutions provides tiered automation scripts and guardrails that keep Cisco, Palo Alto, Fortinet, Meraki, and Aruba environments compliant by default.</p>
-      <div class="hero-ctas">
-        <a class="btn lg" href="#pricing">View Plans →</a>
-        <a class="btn lg outline" href="#demo">Book a Demo</a>
-      </div>
-      <div class="vendors glass">
-        <div class="vendor">🧩 Cisco</div>
-        <div class="vendor">🔥 Palo Alto</div>
-        <div class="vendor">🛡️ Fortinet</div>
-        <div class="vendor">🌿 Meraki</div>
-        <div class="vendor">🟧 Aruba</div>
-      </div>
-    </div>
-    <div class="divider"></div>
-  </section>
-
-  <!-- Features -->
-  <section id="features" class="section">
-    <div class="container center">
-      <h2>Compliance that writes itself</h2>
-      <p class="muted">From discovery to remediation, every step is scripted, versioned, and auditable.</p>
-    </div>
-    <div class="container grid-3">
-      <div class="card lift fade-up"><div class="icon">🛡️</div><h3>Proven Controls</h3><p>Pre‑mapped checklists to CIS, NIST 800‑53, and Zero Trust baselines. Waive exceptions with audit trails.</p></div>
-      <div class="card lift fade-up"><div class="icon">🧰</div><h3>Change‑Safe Fixes</h3><p>Auto‑generate remediation scripts (PowerShell, Python/Netmiko, Ansible) or create pull requests against your GitOps repo.</p></div>
-      <div class="card lift fade-up"><div class="icon">🌐</div><h3>Multi‑Vendor Ready</h3><p>Cisco, Palo Alto, Fortinet, Meraki, and Aruba from day one — mix and match without vendor lock‑in.</p></div>
-      <div class="card lift fade-up"><div class="icon">⚡</div><h3>Fast Rollout</h3><p>Deploy in hours, not months. Lightweight collectors run from any jump host or container.</p></div>
-      <div class="card lift fade-up"><div class="icon">🔐</div><h3>Least‑Privilege</h3><p>RBAC, key vault secrets, and just‑in‑time credentials keep access scoped and auditable.</p></div>
-      <div class="card lift fade-up"><div class="icon">🧮</div><h3>Scales Effortlessly</h3><p>From 10 to 10,000 devices with parallel jobs, queuing, and rate‑limit awareness.</p></div>
-    </div>
-  </section>
-
-  <!-- How it works -->
-  <section id="how" class="section alt">
-    <div class="container how-grid">
-      <div class="fade-up">
-        <h3>How it works</h3>
-        <p class="muted">Opinionated defaults, no black boxes. Bring your own Git and ticketing, or use ours.</p>
-        <ul class="steps">
-          <li><span class="step">1</span><div><div class="step-title">Connect</div><div class="step-text">Securely connect via API or SSH to your device inventory from a jump host or container.</div></div></li>
-          <li><span class="step">2</span><div><div class="step-title">Scan</div><div class="step-text">Collectors run checks (CIS/NIST/Zero Trust) and compare against desired state per site/role.</div></div></li>
-          <li><span class="step">3</span><div><div class="step-title">Fix</div><div class="step-text">Generate change‑safe scripts or PRs. Gate applies behind approvals/windows.</div></div></li>
-          <li><span class="step">4</span><div><div class="step-title">Report</div><div class="step-text">Push results to email, Slack/Teams, SIEM, or a reporting API for auditors.</div></div></li>
-        </ul>
-      </div>
-      <div class="policy glass fade-up">
-        <div class="code-title">Sample policy YAML</div>
-<pre class="code"><code>policy: cis_iosxe_baseline
-version: 1.2.0
-scope:
-  vendors: [cisco, meraki, paloalto, fortinet]
-  roles: [core, distribution, access, firewall]
-checks:
-  - id: no_telnet
-    title: Disable Telnet
-    when: vendor in [cisco, aruba]
-    query: |
-      show running-config | include line vty
-    assert: not includes('transport input telnet')
-    fix: |
-      line vty 0 4
-      transport input ssh
-  - id: radius_timeout
-    title: NPS Timeout >= 5s
-    when: vendor == cisco
-    query: |
-      show run | sec radius-server
-    assert: includes('timeout 5')
-    fix: radius-server timeout 5</code></pre>
-      </div>
-    </div>
-  </section>
-
-  <!-- Pricing with toggle -->
-  <section id="pricing" class="section">
-    <div class="container center">
-      <h2>Simple, tiered pricing</h2>
-      <p class="muted">Choose a plan that matches your scale and governance model.</p>
-      <div class="toggle">
-        <span>Monthly</span>
-        <button id="priceToggle" class="toggle-btn" aria-label="Toggle annual pricing"><span class="knob"></span></button>
-        <span>Annual <b class="save">– Save 15%</b></span>
-      </div>
-    </div>
-    <div class="container grid-3 pricing">
-      <div class="card lift">
-        <div class="plan-name">Starter</div>
-        <div class="plan-blurb">Foundational compliance automation for small networks.</div>
-        <div class="plan-price"><span data-monthly="299" data-annual="254">$299</span><span class="cadence">/mo</span></div>
-        <ul class="plan-features">
-          <li>Up to 25 network devices</li>
-          <li>Baseline config linting</li>
-          <li>CIS/DoD STIG checks (subset)</li>
-          <li>Drift detection (daily)</li>
-          <li>Email report with remediation steps</li>
-          <li>Vendor support: Cisco IOS‑XE, Meraki</li>
-        </ul>
-        <a href="#demo" class="btn wfull">Start Free Trial</a>
-      </div>
-      <div class="card pop lift">
-        <div class="badge">Most Popular</div>
-        <div class="plan-name">Pro</div>
-        <div class="plan-blurb">Deep policy coverage and change-safe remediation.</div>
-        <div class="plan-price"><span data-monthly="899" data-annual="764">$899</span><span class="cadence">/mo</span></div>
-        <ul class="plan-features">
-          <li>Up to 150 network devices</li>
-          <li>Full CIS + NIST 800‑53 mapping</li>
-          <li>Automated fix PRs / change scripts</li>
-          <li>Role-based rulesets per site/BU</li>
-          <li>Drift detection (hourly) + Slack/MS Teams alerts</li>
-          <li>Vendor support: Cisco, Meraki, Palo Alto, Fortinet</li>
-        </ul>
-        <a href="#demo" class="btn wfull">Upgrade to Pro</a>
-      </div>
-      <div class="card lift">
-        <div class="plan-name">Enterprise</div>
-        <div class="plan-blurb">At-scale guardrails, custom controls, white‑glove onboarding.</div>
-        <div class="plan-price talk">Let’s talk</div>
-        <ul class="plan-features">
-          <li>Unlimited devices & orgs</li>
-          <li>Custom control libraries & waivers</li>
-          <li>Ticketing & CMDB integrations</li>
-          <li>Change windows & approvals workflow</li>
-          <li>SLOs, reporting API, data lake export</li>
-          <li>Vendor support: Cisco, Palo Alto, Fortinet, Meraki, Aruba</li>
-        </ul>
-        <a href="#demo" class="btn wfull">Book a Demo</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Demo -->
-  <section id="demo" class="section alt">
+  <section class="hero">
     <div class="container grid-2">
-      <div class="card pad glass fade-up">
-        <h3>Book a demo</h3>
-        <p class="muted">Tell us about your environment. We’ll tailor a walkthrough to your vendors, policies, and scale.</p>
-        <form id="demo-form" class="form">
-          <label>Work email</label>
-          <input type="email" name="email" placeholder="you@company.com" required />
-          <div class="grid-2 gap">
-            <div>
-              <label>Company</label>
-              <input type="text" name="company" placeholder="Company Inc." />
-            </div>
-            <div>
-              <label>Device count</label>
-              <input type="text" name="devices" placeholder="e.g., 250" />
-            </div>
-          </div>
-          <label>Vendors</label>
-          <input type="text" name="vendors" placeholder="Cisco, Palo Alto, Fortinet, Meraki, Aruba" />
-          <label>Notes</label>
-          <textarea name="notes" rows="4" placeholder="Share any specifics: policies, timelines, constraints…"></textarea>
-          <button type="submit" class="btn wfull">Request Demo</button>
-          <p class="tiny">Or email <a href="mailto:sales@colemanintegrated.com">sales@colemanintegrated.com</a></p>
-          <div id="form-result" class="form-result" hidden></div>
-        </form>
+      <div>
+        <h1>Automation-first network compliance</h1>
+        <p>Reduce risk, prove compliance (SOC 2, CIS, NIST 800‑53), and eliminate drift across Cisco, Fortinet, Palo Alto, Meraki, and cloud networks.</p>
+        <div class="cta-row">
+          <a href="contact.html" class="btn">Book a discovery call</a>
+          <a href="case-studies.html" class="link">See outcomes →</a>
+        </div>
+        <ul class="badge-list">
+          <li>Golden image checks</li>
+          <li>Config snapshots & drift</li>
+          <li>EOL/EOS & PSIRT mapping</li>
+          <li>Remediation as code</li>
+        </ul>
       </div>
-      <div class="card pad glass fade-up">
-        <h3>What you’ll see</h3>
+      <div class="hero-card">
+        <div class="card">
+          <h3>Compliance-as-Code Score</h3>
+          <p class="score">92<span>/100</span></p>
+          <p class="muted">Example dashboard view</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="section">
+    <div class="container">
+      <h2>Services</h2>
+      <div class="cards grid-3">
+        <div class="card">
+          <h3>Network Audit+</h3>
+          <p>Multi-vendor baseline checks, license snapshots, config diffs, and executive-ready reports.</p>
+        </div>
+        <div class="card">
+          <h3>Compliance Packs</h3>
+          <p>CIS/NIST/SOC 2 control mappings with automated evidence collection and remediation playbooks.</p>
+        </div>
+        <div class="card">
+          <h3>Automation Platform</h3>
+          <p>Streamlit/Ansible modules, scheduled jobs, and GitOps pipelines for golden standards.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="industries" class="section alt">
+    <div class="container">
+      <h2>Industries</h2>
+      <div class="chips">
+        <span class="chip">Manufacturing</span>
+        <span class="chip">Construction / Rentals</span>
+        <span class="chip">Healthcare</span>
+        <span class="chip">SMB / Multi‑site</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container grid-2">
+      <div>
+        <h2>Why clients choose us</h2>
         <ul class="checklist">
-          <li>Live scan across mixed‑vendor lab</li>
-          <li>Drift detection → auto fix PR in Git</li>
-          <li>Role‑based policy targeting by site/BU</li>
-          <li>Audit‑ready reports mapped to controls</li>
+          <li>Hands‑on with 9300/9500X, FortiSwitch, FTD, Meraki MX/MR, Panorama, ESXi, and more.</li>
+          <li>Actionable deliverables: XLS summaries, remediation scripts, SOC 2 evidence packs.</li>
+          <li>Transparent pricing—Starter, Pro, Enterprise subscriptions.</li>
         </ul>
-        <div class="metrics">
-          <div><div class="num">92%</div><div class="cap">Compliant</div></div>
-          <div><div class="num">34</div><div class="cap">Findings</div></div>
-          <div><div class="num">18</div><div class="cap">Auto‑fixable</div></div>
-        </div>
-        <p class="tiny muted">Sample data for illustration.</p>
+      </div>
+      <div class="card">
+        <h3>Typical results</h3>
+        <ul class="bullets">
+          <li>↓ 65% configuration drift within 30 days</li>
+          <li>↓ 40% time-to-evidence for audits</li>
+          <li>↑ 99% golden image adherence</li>
+        </ul>
       </div>
     </div>
   </section>
 
-  <!-- FAQ -->
-  <section id="faq" class="section">
-    <div class="container card pad">
-      <h3>FAQ</h3>
-      <div class="faq">
-        <div>
-          <div class="q">Do you run in our environment or yours?</div>
-          <div class="a">You choose. Most customers run our collectors in their network (container/VM) and keep data in their systems. We also offer a managed option for smaller teams.</div>
-        </div>
-        <div>
-          <div class="q">How do fixes apply safely?</div>
-          <div class="a">We generate change scripts or Git PRs for your review. You can require approvals and windowing before any apply step.</div>
-        </div>
-        <div>
-          <div class="q">What if we don’t use Git yet?</div>
-          <div class="a">No problem. We’ll deliver human‑readable remediation scripts (Ansible/Netmiko/PowerShell) with diff previews and rollbacks.</div>
-        </div>
-        <div>
-          <div class="q">Which frameworks are supported?</div>
-          <div class="a">CIS Benchmarks, NIST 800‑53 controls mapping, and Zero Trust baseline packs. Enterprise adds custom control libraries.</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container foot-grid">
-      <div>
-        <a class="brand foot-brand" href="#top">
-          <svg class="brand-mark" viewBox="0 0 100 100" aria-hidden="true">
-            <defs><linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#0ea5e9"/><stop offset="100%" stop-color="#6366f1"/></linearGradient></defs>
-            <rect width="100" height="100" rx="22" fill="url(#grad2)"/>
-            <path d="M30 55 l15 15 30-40" stroke="white" stroke-width="9" fill="none" stroke-linecap="round"/>
-          </svg>
-          <div>
-            <div class="brand-title">Coleman Integrated</div>
-            <div class="brand-sub">Automation • Compliance • Network</div>
-          </div>
-        </a>
-        <p class="tiny muted">© 2025 Coleman Integrated Solutions. All rights reserved.</p>
-      </div>
-      <div>
-        <div class="foot-head">Company</div>
-        <ul class="foot-links">
-          <li><a href="#features">Features</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#demo">Book a demo</a></li>
-        </ul>
-      </div>
-      <div>
-        <div class="foot-head">Contact</div>
-        <ul class="foot-links">
-          <li><a href="mailto:sales@colemanintegrated.com">sales@colemanintegrated.com</a></li>
-          <li><a href="tel:+12255551234">+1 (225) 555‑1234</a></li>
-          <li>Baton Rouge • Remote‑first</li>
-        </ul>
-      </div>
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Coleman Integrated Solutions • Automation • Compliance • Network</p>
+      <p><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></p>
     </div>
   </footer>
-
-  <script src="js/main.js"></script>
 </body>
 </html>
